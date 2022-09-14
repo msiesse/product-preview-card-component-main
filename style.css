@@ -57,7 +57,7 @@ picture {
     padding: 2em;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 768px) {
     .box {
         flex-direction: column;
         width: 23em;
