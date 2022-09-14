@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: hsl(30, 38%, 92%);
 }
@@ -26,28 +30,42 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30em;
+    margin: 0.5em 0.5em 1.5em 0.5em;
+}
+
+picture {
+    display: flex;
 }
 
 .box {
     display: flex;
     background-color: white;
     border-radius: 0.75em;
-    height: 28em;
-    width: 37em;
+    width: 35em;
 }
 
 .perfume-photo {
     max-width: 100%;
-    height: auto;
     border-radius: 0.75em 0 0 0.75em;
 }
 
 .perfume-infos {
     display: flex;
     flex-direction: column;
-    width: 15em;
-    padding: 2em;
+    width: 100%;
+    padding: 1.5em;
+}
+
+@media screen and (max-width: 540px) {
+    .box {
+        flex-direction: column;
+        width: 23em;
+    }
+
+    .perfume-photo {
+        max-width: 100%;
+        border-radius: 0.75em 0.75em 0 0;
+    }
 }
 
 .price {
